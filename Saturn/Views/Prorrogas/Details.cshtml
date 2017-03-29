@@ -1,0 +1,50 @@
+﻿@model Saturn.Models.Prorroga
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Prorroga</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Contrato.CodContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contrato.CodContrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaIni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaIni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaFin)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProrrogaID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
